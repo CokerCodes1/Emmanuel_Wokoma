@@ -17,64 +17,6 @@ html{
   --secondary-heading: #277b6d;
 } 
 
-#hamburger{
-    display: none;
-    height: 50px;
-    background: var(--bg-clr-three);
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-    border-radius: 10px;
-    position: sticky;
-    margin-left: 50%;
-    top: 30px;
-}
-
-#dropdownBox{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: none;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.95);
-    justify-content: center;
-    align-items: center;
-    z-index: +5;
-}
-#navcon-mobile{
-    width: 50%;
-    padding: 2%;
-    background: burlywood;
-}
-#navcon-mobile li{
-    width: 100%;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1a2232;
-}
-#navcon-mobile li a{
-    font-size: 30px;
-    color: slategrey;
-}
-#exitIcon{
-    width: 12%;
-    height: 70px;
-    background-color: orange;
-    color: white;
-    position: absolute;
-    top: 80%;
-    left: 46%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700px;
-    font-size: 50px;
-    border-radius: 5px;
-}
-
 body{
   padding: 2% !important;
 }
@@ -979,3 +921,62 @@ button.btn:hover{
 }
 
 /* Media Query ends */
+
+
+#hamburger{
+    display: none;
+    height: 50px;
+    background: var(--bg-clr-three);
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    position: sticky;
+    margin-left: 50%;
+    top: 30px;
+}
+
+#dropdownBox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: +5;
+}
+#navcon-mobile{
+    width: 50%;
+    padding: 2%;
+    background: burlywood;
+}
+#navcon-mobile li{
+    width: 100%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a2232;
+}
+#navcon-mobile li a{
+    font-size: 30px;
+    color: slategrey;
+}
+#exitIcon{
+    width: 12%;
+    height: 70px;
+    background-color: orange;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700px;
+    font-size: 50px;
+    border-radius: 5px;
+}
