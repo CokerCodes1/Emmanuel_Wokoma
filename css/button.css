@@ -1,0 +1,30 @@
+html{
+  scroll-behavior: smooth;
+  
+  --bg-clr-one: #f6f9fe;
+  --bg-clr-two: #f4f7fc;
+  --bg-clr-three: #eaf3fa;
+  --primary-clr: #05555c;
+  --primary-light-clr: #eaf3fa;
+  --links-clr: #186f78;
+  --text-clr: #3f7277;
+  --secondary-heading: #277b6d;
+} 
+.mybtn{
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+    color: white;
+    /* Background color cycle every 5s (4 colors = 20s total) */
+    animation: fabBgCycle 20s steps(4, end) infinite;
+}
+ /* Color cycle */
+  @keyframes fabBgCycle {
+    0%   { background: var(--primary-clr); }  /* WhatsApp green */
+    25%  { background: var(--links-clr); }  /* blue */
+    50%  { background: var(--secondary-heading); }  /* purple */
+    75%  { background: var(--primary-clr); }  /* orange */
+    100% { background: var(--links-clr); }  /* back to green */
+}

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
   font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.css">
@@ -11,30 +13,41 @@
   <link rel="shortcut icon" href="img/picture frame.PNG" type="image/x-icon">
 </head>
 <body>
-  
-  <div class="website-container">
-    
-    <header id="sticky" class="animate__animated">
-      <nav id="mynav">
-      <div id="logo">
-        <img src="img/picture frame.PNG" alt="">
-      </div>
 
-      <ul id="links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-      </ul><br><br><br>
+  <section id="dropdownBox" class="animate__animated">
+        <div id="exitIcon">X</div>
+           <ul id="navcon-mobile">
+                <li><a href="#sec1">HOME</a></li>
+                <li><a href="#sec2">ABOUT</a></li>
+                <li><a href=".tools">SKILLS</a></li>
+                <li><a href="#sec3">PRODUCTS</a></li>
+                <li><a href="#myFooter">CONTACT</a></li>
+            </ul>
+    </section>
 
-      <div id="con">
-        <button class="contact btn">Contact</button>
-      </div>
-    </nav>
-    
-    </header>
-    
+<header id="myheader">
+  <nav class="nav">
+    <div class="logo">
+      <a href="#">EW</a>
+    </div>
+
+
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Testimonials</a></li>
+    </ul>
+
+    <button class="mybtn">Contact Me</button>
+
+    <div id="hamburger">
+        <img src="img/icons8-hamburger-menu-32.png" alt="">
+    </div>
+  </nav>
+</header>
+
     <section id="herosec">
       
       <article class="heroholder">
@@ -253,14 +266,14 @@
 
   <section class="Portfolio reusable" id="Portfolio">
 
-    <header class="headings">
+    <article class="headings">
       <h3>Portfolio</h3>
       <h1>Some of my latest works</h1>
       <p>
         Explore amazing software solutions and designs I have built for clients both locally and 
         internationally.
       </p>
-    </header>
+    </article>
 
     <main class="maincontainer">
       <div class="button-group">
@@ -480,12 +493,10 @@
 
     <footer class="footer-contents">
       <a href="#">Emmanuel</a>
-      <p>Created by <span>Cokercodes!</span> | All rights reserved.</p>
+      <p>Created by <span>EW-Tech!</span> | All rights reserved.</p>
     </footer>
   </section>
 
-
-  </div>
 
 
 
