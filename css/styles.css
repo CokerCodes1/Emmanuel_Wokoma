@@ -94,6 +94,7 @@ button.btn:hover{
   flex-direction: column;
   height: 100vh;
   margin-top: 10% !important;
+  margin-bottom: 10%;
 }
 .heroholder{
   width: 90%;
@@ -105,6 +106,7 @@ button.btn:hover{
   display: flex;
   flex-direction: column;
   margin: 1%;
+  margin-bottom: 10%;
 }
 .career-item{
   background-color: whitesmoke;
@@ -193,6 +195,7 @@ button.btn:hover{
   padding: 90px 8% 40px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10%;
 }
 .about .about-image{
   position: relative;
@@ -284,6 +287,7 @@ button.btn:hover{
   gap: 10px;
   justify-content: space-between;
   color: var(--text-clr) !important;
+  margin-bottom: 10%;
 }
 .services-container .service-box{
   position: relative;
@@ -377,6 +381,7 @@ button.btn:hover{
 
 .resume{
   background-color: var(--bg-clr-one);
+  margin-bottom: 10%;
 }
 .resume .resume-row{
   display: flex;
@@ -450,7 +455,7 @@ button.btn:hover{
 
 .Portfolio .button-group{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10%;
 }
 .Portfolio .button-group .button{
   display: inline-block;
@@ -533,9 +538,14 @@ button.btn:hover{
 
 /* testimonial section styling */
 
+#testimonials{
+  margin-top: 10%;
+}
+
 #software{
     width: 100%;
     padding: 1%;
+    margin-bottom: 10%;
 }
 .psoft{
     font-size: 20px;
