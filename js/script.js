@@ -1,4 +1,4 @@
-var thanx = "Welcome User !! To build creative Mobile-Apps and Websites kindly reach out to me and get your products deployed in a few days. "
+var thanx = "Unlock your brand’s full potential with a website that doesn’t just look good—it converts. I build fast, modern, user-focused websites designed to attract attention, drive engagement, and turn visitors into paying customers. With expert digital marketing strategies, SEO, and high-performance design, I help businesses grow online and stay ahead of the competition. Whether you need a stunning new site, a marketing revamp, or a complete digital strategy, I deliver results that speak for themselves. Let’s build something powerful for your business. Call --- 09169019241 "
                     
 alert(thanx);
 
