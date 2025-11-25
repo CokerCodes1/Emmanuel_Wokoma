@@ -18,13 +18,12 @@ html{
 } 
 
 #fixed-box{
-    width: 250px;
-    height: 50px;
-    background-color: var(--links-clr);
+    width: 20%;
     position: fixed;
     border-radius: 15px;
     padding: 2%;
-    color: whitesmoke;
+    color: var(--primary-clr);
+    z-index: +100;
     display: flex;
     justify-content: center;
     align-items: center;
