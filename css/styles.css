@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html{
   scroll-behavior: smooth;
@@ -16,6 +16,26 @@ html{
   --text-clr: #3f7277;
   --secondary-heading: #277b6d;
 } 
+
+#fixed-box{
+    width: 250px;
+    height: 50px;
+    background-color: var(--links-clr);
+    position: fixed;
+    border-radius: 15px;
+    padding: 2%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    z-index: +10;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2%;
+}
+
 
 body{
   padding: 2% !important;
@@ -35,20 +55,20 @@ button.btn{
   transition: 0.4s;
 }
 button.btn:hover{
-  background-color: brown;
-  color: var(--bg-clr-one);
-  border: 2px solid brown;
+  background-color: var(--bg-clr-one);
+  color: var(--links-clr);
+  border: 1px solid var(--primary-clr);
 }
 
 
 #myheader{
   width: 100%;
-  margin-bottom: 5% !important;
+  margin-bottom: 10% !important;
 }
 
 .nav{
-  z-index: +100;
-  width: 95%;
+  z-index: +1000 !important;
+  width: 96%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -56,6 +76,8 @@ button.btn:hover{
   background-color: var(--links-clr);
   position: fixed;
   border-radius: 20px;
+  padding: 1%;
+  margin-bottom: 10% !important;
 }
 
 .logo{
@@ -77,6 +99,7 @@ button.btn:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10%;
 }
 .links li{
   width: 23%;
@@ -104,51 +127,40 @@ button.btn:hover{
 }
 .career{
   display: flex;
-  flex-direction: column;
   margin: 1%;
   margin-bottom: 10%;
 }
 .career-item{
   background-color: whitesmoke;
   width: 50%;
-  color: var(--bg-clr-one) !important;
+  color: var(--text-clr) !important;
   padding: 2%;
   border-radius: 5px;
+  font-size: xx-large;
   margin: 1%;
   border-block-end: 3px solid black;
-  box-shadow: 0 0 30px grey;
+  box-shadow: 0 0 30px rgb(53, 53, 53);
 }
 .divh1{
-  width: 48%;
+  width: 90%;
   margin: 1%;
   padding: 1%;
 }
 .divh1 h3{
-  color: var(--secondary-heading);
+  color: var(--bg-clr-one);
 }
 .divh1 h1{
-  color: #05555c;
+  color: var(--bg-clr-three);
   font-size: 35px;
 }
 .divh1 h2{
-  color: var(--primary-clr);
+  color: var(--bg-clr-two);
   font-size: 25px;
 }
 .divh1 p{
-  color: var(--text-clr);
+  color: var(--primary-light-clr);
 }
-.divh2{
-  width: 48%;
-  margin: 1%;
-  padding: 1%;
 
-}
-.divh2 img{
-  width: 110%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 30%;
-}
 
 #alertBox_wrapper{
     width: 100%;
@@ -298,7 +310,7 @@ button.btn:hover{
   align-items: flex-start;
   flex-basis: 32%;
   padding: 40px 40px 30px;
-  background-color: var(--bg-clr-one);
+  background-color: var(--primary-clr);
   border: var(1px --bg-clr-three);
   border-radius: 5px;
   margin-bottom: 20px;
@@ -309,7 +321,7 @@ button.btn:hover{
 }
 .service-box .icon-wrapper{
   position: relative;
-  background-color: var(--primary-clr);
+  background-color: var(--bg-clr-three);
   font-size: 30px;
   width: 55px;
   height: 55px;
@@ -321,6 +333,19 @@ button.btn:hover{
   transition: 0.4s;
   z-index: 3;
 }
+.headings{
+  width: 90%;
+  color: var(--text-clr);
+  padding: 3%;
+}
+.learn{
+  width: 50%;
+  padding: 3%;
+  font-size: large;
+  margin-top: 4%;
+  z-index: +10;
+  cursor: pointer;
+}
 .service-box .icon-wrapper img{
   font-size: 24px;
   color: var(--bg-clr-one);
@@ -328,18 +353,18 @@ button.btn:hover{
 }
 .service-box h2{
   padding: 15px 0px 10px;
-  color: var(--primary-clr);
+  color: var(--bg-clr-two);
   font-size: 20px;
   transition: 0.4s;
 }
 .service-box p{
-  color: var(--text-clr);
+  color: var(--bg-clr-three);
   line-height: 1.3;
   transition: 0.4s;
 }
 .service-box h3{
   font-size: 16px;
-  color: var(--links-clr);
+  color: var(--bg-clr-one);
   margin-top: 50px;
 }
 .services-container .service-box::after{
@@ -347,7 +372,7 @@ button.btn:hover{
   content: '';
   width: 100%;
   height: 1.3%;
-  background-color: var(--primary-clr);
+  background-color: var(--bg-clr-one);
   left: 0%;
   bottom: 0%;
   z-index: 1;
@@ -361,18 +386,22 @@ button.btn:hover{
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
 }
 .services-container .service-box:hover.service-box .icon-wrapper{
-  background-color: var(--bg-clr-one);
+  background-color: var(--primary-clr);
+}
+.services-container .service-box:hover.service-box .learn{
+   background-color: var(--primary-clr);
+   color: var(--bg-clr-one);
 }
 .services-container .service-box:hover.service-box h2{
-  color: var(--bg-clr-one);
+  color: var(--text-clr);
   z-index: 5;
 }
 .services-container .service-box:hover.service-box p{
-  color: #aaa;
+  color: var(--primary-clr);
   z-index: 5;
 }
 .services-container .service-box:hover.service-box h3{
-  color: #e3e3e8;
+  color: var(--links-clr);
   z-index: 5;
 }
 
@@ -551,7 +580,7 @@ button.btn:hover{
     font-size: 20px;
 }
 .softchild{
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow-y: auto;
     padding: 1%;
@@ -559,7 +588,7 @@ button.btn:hover{
     display: flex;
 }
 .softchild div{
-    min-width: 400px;
+    min-width: 600px;
     min-height: 200px;
     padding: 3%;
     margin: 1%;

@@ -19,6 +19,7 @@ html{
     color: white;
     /* Background color cycle every 5s (4 colors = 20s total) */
     animation: fabBgCycle 20s steps(4, end) infinite;
+    margin-left: auto;
 }
  /* Color cycle */
   @keyframes fabBgCycle {
